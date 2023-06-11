@@ -40,7 +40,7 @@ export const Menu: FC = () => {
               <NavLink
                 aria-current="page"
                 className="menu__link"
-                to="/living-room"
+                to="/"
                 onClick={() => setIsMenuOpen(prev => !prev)}
               >
                 Головна
@@ -50,7 +50,7 @@ export const Menu: FC = () => {
               <NavLink
                 aria-current="page"
                 className="menu__link"
-                to="/dining-room"
+                to="/про-нас"
                 onClick={() => setIsMenuOpen(prev => !prev)}
               >
                 Про нас
@@ -61,7 +61,7 @@ export const Menu: FC = () => {
               <NavLink
                 aria-current="page"
                 className="menu__link"
-                to="/bedroom"
+                to="/послуги"
                 onClick={() => setIsMenuOpen(prev => !prev)}
               >
                 Послуги
@@ -72,7 +72,7 @@ export const Menu: FC = () => {
               <NavLink
                 aria-current="page"
                 className="menu__link"
-                to="/bathroom"
+                to="/каталог-автомобілів"
                 onClick={() => setIsMenuOpen(prev => !prev)}
               >
                 Каталог автомобілів
@@ -83,7 +83,7 @@ export const Menu: FC = () => {
               <NavLink
                 aria-current="page"
                 className="menu__link"
-                to="/"
+                to="/відгуки"
                 onClick={handleClickScroll}
               >
                 Відгуки
@@ -91,12 +91,14 @@ export const Menu: FC = () => {
             </li>
 
             <li className="menu__item">
-              <a
+            <NavLink
+                aria-current="page"
                 className="menu__link"
-                onClick={handleClickScrollContact}
+                to="/контакти"
+                onClick={handleClickScroll}
               >
                 Контакти
-              </a>
+              </NavLink>
             </li>
           </ul>
 

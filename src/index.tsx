@@ -31,7 +31,7 @@ root.render(
 
         <Route path="/про-нас" element={<AboutPage />} />
         <Route path="/послуги" element={<ServicesPage />} />
-        <Route path="/каталог-автомобілів" element={<BedRoomPage />} />
+        <Route path="/каталог-автомобілів" element={<ServicesPage />} />
 
         <Route path="/відгуки" element={<ServicesPage />} />
 

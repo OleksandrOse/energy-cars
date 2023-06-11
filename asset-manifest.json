@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/energy-cars/static/css/main.c9c9bef3.css",
-    "main.js": "/energy-cars/static/js/main.fcb7ef28.js",
+    "main.js": "/energy-cars/static/js/main.eb52fbff.js",
     "static/media/sell.png": "/energy-cars/static/media/sell.8f9d1b43db6b8eb91cdd.png",
     "static/media/perevez.png": "/energy-cars/static/media/perevez.b73597909099b1950400.png",
     "static/media/zamovl.png": "/energy-cars/static/media/zamovl.c5617b2c11498f21fa68.png",
@@ -21,10 +21,10 @@
     "static/media/telegram.svg": "/energy-cars/static/media/telegram.9086d78c3064272e4efd.svg",
     "static/media/facebook.svg": "/energy-cars/static/media/facebook.c79db0adc2961bb9d7de.svg",
     "main.c9c9bef3.css.map": "/energy-cars/static/css/main.c9c9bef3.css.map",
-    "main.fcb7ef28.js.map": "/energy-cars/static/js/main.fcb7ef28.js.map"
+    "main.eb52fbff.js.map": "/energy-cars/static/js/main.eb52fbff.js.map"
   },
   "entrypoints": [
     "static/css/main.c9c9bef3.css",
-    "static/js/main.fcb7ef28.js"
+    "static/js/main.eb52fbff.js"
   ]
 }

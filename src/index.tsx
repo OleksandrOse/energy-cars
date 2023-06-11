@@ -11,11 +11,11 @@ import './index.css';
 import App from './App';
 import { HomePage } from './pages/HomePage/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
-import { LivingRoomPage } from './pages/LivingRoomPage/LivingRoomPage';
+import { AboutPage } from './pages/AboutPage/AboutPage';
 import { DiningRoomPage } from './pages/DiningRoomPage/DiningRoomPage';
 import { BedRoomPage } from './pages/BedroomPage/BedroomPages';
 
-import { KitchenPage } from './pages/BathRoomPage/BathRoom';
+import { ServicesPage } from './pages/ServicesPage/ServicesPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -27,13 +27,15 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<HomePage />} />
-        <Route path="home" element={<Navigate to="/" replace />} />
+        <Route path="/головна" element={<Navigate to="/" replace />} />
 
-        <Route path="/living-room" element={<LivingRoomPage />} />
-        <Route path="/dining-room" element={<DiningRoomPage />} />
-        <Route path="/bedroom" element={<BedRoomPage />} />
+        <Route path="/про-нас" element={<AboutPage />} />
+        <Route path="/послуги" element={<ServicesPage />} />
+        <Route path="/каталог-автомобілів" element={<BedRoomPage />} />
 
-        <Route path="/bathroom" element={<KitchenPage />} />
+        <Route path="/відгуки" element={<ServicesPage />} />
+
+        <Route path="/контакти" element={<ServicesPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Route>

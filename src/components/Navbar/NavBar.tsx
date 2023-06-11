@@ -11,17 +11,17 @@ export const Navbar = () => {
       data-cy="categoryLinksContainer"
     >
       <ul className="nav__list">
-        <PageNavLink to="/living-room" title="Головна" />
+        <PageNavLink to="/головна" title="Головна" />
 
-        <PageNavLink to="/dining-room" title="Про нас" />
+        <PageNavLink to="/про-нас" title="Про нас" />
 
-        <PageNavLink to="/bedroom" title="Послуги" />
+        <PageNavLink to="/послуги" title="Послуги" />
 
-        <PageNavLink to="/bathroom" title="Каталог автомобілів" />
+        <PageNavLink to="/каталог-автомобілів" title="Каталог автомобілів" />
 
-        <PageNavLink to="/bedroom" title="Відгуки" />
+        <PageNavLink to="/відгуки" title="Відгуки" />
 
-        <PageNavLink to="/bathroom" title="Контакти" />
+        <PageNavLink to="/контакти" title="Контакти" />
       </ul>
     </nav>
   );

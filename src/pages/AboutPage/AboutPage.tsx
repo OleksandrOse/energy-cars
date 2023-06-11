@@ -3,8 +3,9 @@ import { Banner } from "../../components/Banner/Banner";
 import { ContactUs } from "../../components/ContactUs/ContactUs";
 import { TouchContext } from '../../helpers/TouchProvider';
 import classNames from 'classnames';
+import { AboutUs } from '../../components/AboutUs/AboutUs';
 
-export const LivingRoomPage = () => {
+export const AboutPage = () => {
   const { isTouchOpen } = useContext(TouchContext);
   const imagesForBanner = [
     'images/Living-room/1.jpg',
@@ -42,24 +43,13 @@ export const LivingRoomPage = () => {
             grid__item--dekstop-1-12"
               >
                 <h2 className="dining__title">
-                  Living Room Furniture
+                  Про нас
                 </h2>
-              </div>
-
-              <div className="
-            grid__item
-            grid__item--tablet-1-6
-            grid__item--dekstop-1-12"
-              >
-                <p className="dining__paragraf">
-                Looking to upgrade your living room? You&apos;ve come to the right place. Stylish and durable, our extensive collection includes a variety of sofas, sectionals, recliners, coffee tables and decor. Add the finishing touches with expertly designed textiles, rugs, lighting and more! Your living room is the centre of life in your home - let us help you make it look that way!
-                </p>
               </div>
             </div>
           </div>
         </section>
-
-        <Banner imagesForBanner={imagesForBanner}/>
+        <AboutUs />
 
         <ContactUs />
       </main>

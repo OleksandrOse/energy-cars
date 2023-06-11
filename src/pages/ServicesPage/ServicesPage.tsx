@@ -3,8 +3,9 @@ import { Banner } from "../../components/Banner/Banner";
 import { ContactUs } from "../../components/ContactUs/ContactUs";
 import { TouchContext } from "../../helpers/TouchProvider";
 import classNames from "classnames";
+import { Services } from "../../components/Services/Services";
 
-export const KitchenPage: React.FC = () => {
+export const ServicesPage: React.FC = () => {
   const { isTouchOpen } = useContext(TouchContext);
   const imagesForBanner = [
     'images/Bathroom/1.jpg',
@@ -40,24 +41,14 @@ export const KitchenPage: React.FC = () => {
           grid__item--dekstop-1-12"
               >
                 <h2 className="dining__title">
-                  Bathroom Furniture
+                  Послуги
                 </h2>
-              </div>
-
-              <div className="
-          grid__item
-          grid__item--tablet-1-6
-          grid__item--dekstop-1-12"
-              >
-                <p className="dining__paragraf">
-                  Creating the right bathroom furniture can help you pull together a clean and refreshing aesthetic in your home bathroom. A well-designed bathroom is both aesthetically pleasing and functional. We create a wide selection of bathroom furniture, including bathroom vanities, bathroom sets, bathroom shelves and bathroom accessories to help getting ready in the morning a little easier. Your bathroom is one of the most important rooms in your home, which is why we have a large collection of bathroom furniture design that meets every style need, from traditional to modern.
-                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <Banner imagesForBanner={imagesForBanner} />
+        <Services />
 
         <ContactUs />
       </main>

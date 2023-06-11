@@ -1,0 +1,121 @@
+@import "../../style/utils";
+
+.services {
+  &__container {
+    @include container;
+  }
+
+  &__detail {
+    margin-bottom: 40px;
+
+    @include onTablet {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.service {
+  &__photo-container {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 320px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    transition: transform 0.3s, box-shadow 0.3s linear;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    @include onTablet {
+      height: 320px;
+      padding-bottom: 0;
+    }
+
+    @include onDekstop {
+      height: 320px;
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+
+    &--prugin {
+      background-image: url(../../images/services/prugin.png);
+    }
+
+    &--logistic {
+      background-image: url(../../images/services/logistic.png);
+    }
+
+    &--perevez {
+      background-image: url(../../images/services/perevez.png);
+    }
+
+    &--rozmutn {
+      background-image: url(../../images/services/rozmutn.png);
+    }
+
+    &--sell {
+      background-image: url(../../images/services/sell.png);
+    }
+
+    &--strahuv {
+      background-image: url(../../images/services/strahuv.png);
+    }
+
+    &--zamovl {
+      background-image: url(../../images/services/zamovl.png);
+    }
+  }
+
+  &__about {
+    @include onDekstop {
+      display: grid;
+      grid-template-columns: repeat(12 , 1fr);
+    }
+  }
+
+  &__name {
+    grid-column: 1 / 9;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-white;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    grid-column: 1 / 9;
+
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+  }
+
+  &__link {
+    font-weight: bold;
+    color: $color-blue;
+    text-decoration: none;
+  }
+}

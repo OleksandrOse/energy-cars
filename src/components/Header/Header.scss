@@ -1,0 +1,117 @@
+@import "../../style/utils";
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+
+  &__top-container {
+    background-color: $color-black;
+    padding: 10px 0;
+  }
+  &__top {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    @include top-actions;
+    @include container;
+
+    @include onDekstop {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  &__top-phone {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  &__top-mesenger {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+  }
+
+  &__icon-menu {
+    width: 16px;
+    height: 16px;
+
+    background-image: url(../../images/menu.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+
+    &:hover {
+      background-image: url(../../images/menu_hover.svg);
+     
+    }
+
+    @include onDekstop {
+      display: none;
+    }
+  }
+
+  &__icon--phone {
+    background-image: url(../../images/phone.svg);
+  }
+
+  &__icon--facebook {
+    background-image: url(../../images/facebook.svg);
+  }
+
+  &__icon--instagram {
+    background-image: url(../../images/instagram.svg);
+  }
+
+  &__icon--telegram {
+    background-image: url(../../images/telegram.svg);
+  }
+
+  &__icon--twitter {
+    background-image: url(../../images/twitter.svg);
+  }
+
+  &__phone {
+    color: $color-white;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+
+  &__navbar {
+    display: none;
+
+    @include onDekstop {
+      display: block;
+    }
+  }
+
+  &__top-content {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Navigate,
   Route,
   Routes,
@@ -12,10 +12,10 @@ import App from './App';
 import { HomePage } from './pages/HomePage/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
-import { DiningRoomPage } from './pages/DiningRoomPage/DiningRoomPage';
-import { BedRoomPage } from './pages/BedroomPage/BedroomPages';
+
 
 import { ServicesPage } from './pages/ServicesPage/ServicesPage';
+import { CatalogList } from './pages/CatalogPage/CatalogPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -31,7 +31,7 @@ root.render(
 
         <Route path="/про-нас" element={<AboutPage />} />
         <Route path="/послуги" element={<ServicesPage />} />
-        <Route path="/каталог-автомобілів" element={<ServicesPage />} />
+        <Route path="/каталог-автомобілів" element={<CatalogList title='Каталог автомобілів' />} />
 
         <Route path="/відгуки" element={<ServicesPage />} />
 

@@ -39,3 +39,14 @@
     padding: 0 40px;
   }
 }
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin rectangle($width, $height) {
+  width: $width;
+  height: $height;
+}
+
